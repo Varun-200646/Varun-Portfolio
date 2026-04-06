@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Varun Mhatre</title>
+  <meta name="description"
+    content="Get in touch with Varun Ram Mhatre — open to internships, data projects, and collaborations.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="site-noise"></div>
+  <div class="site-grid"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">VM<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-nav-overlay">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <div class="page">
+
+    <div class="page-hero reveal">
+      <div class="page-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Let's <em style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--text-2)">Connect</em></h1>
+      <p>Open to internships, data collaborations, and mentorship. Drop a message — I respond within 24 hours.</p>
+    </div>
+
+    <section class="section">
+      <div class="contact-layout">
+
+        <!-- FORM -->
+        <div class="reveal">
+          <p class="section-tag" style="margin-bottom:1.5rem">Send a Message</p>
+
+          <!-- NOTE: Replace YOUR_ID with your actual Formspree ID (e.g. mqkrwxyz) -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xjgpjjzq" method="POST">
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject"
+                placeholder="Internship Opportunity / Collaboration / Other">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell me what you have in mind..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="form-submit-btn"
+              style="width:100%;justify-content:center;">
+              Send Message →
+            </button>
+          </form>
+
+          <p id="form-status" style="margin-top:0.75rem;font-size:0.65rem;color:var(--text-3);"></p>
+        </div>
+
+
+
+
+        <!-- CONTACT INFO -->
+        <div class="reveal">
+          <p class="section-tag" style="margin-bottom:1.5rem">Direct Links</p>
+          <div class="contact-info-cards">
+
+            <a href="mailto:varunmhatre2324@ternaengg.ac.in" class="contact-info-card" style="text-decoration:none">
+              <div class="contact-icon">✉</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-val">varunmhatre2324@ternaengg.ac.in</div>
+              </div>
+            </a>
+
+            <a href="tel:+918369266891" class="contact-info-card" style="text-decoration:none">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-val">+91 83692 66891</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/varun-mhatre-1a9438338/" target="_blank" class="contact-info-card"
+              style="text-decoration:none">
+              <div class="contact-icon" style="color:var(--cyan)">in</div>
+              <div>
+                <div class="contact-info-label">LinkedIn</div>
+                <div class="contact-info-val">varun-mhatre-1a9438338</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/Varun-200646" target="_blank" class="contact-info-card"
+              style="text-decoration:none">
+              <div class="contact-icon">gh</div>
+              <div>
+                <div class="contact-info-label">GitHub</div>
+                <div class="contact-info-val">github.com/Varun-200646</div>
+              </div>
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/varunmhatre46" target="_blank" class="contact-info-card"
+              style="text-decoration:none">
+              <div class="contact-icon">HR</div>
+              <div>
+                <div class="contact-info-label">HackerRank</div>
+                <div class="contact-info-val">varunmhatre46</div>
+              </div>
+            </a>
+
+            <div class="contact-info-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-val">Navi Mumbai, Maharashtra, India</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- AVAILABILITY BOX -->
+          <div style="margin-top:1.5rem;padding:1.5rem;background:var(--card);border:1px solid rgba(52,211,153,0.25);">
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
+              <div style="width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 2s infinite">
+              </div>
+              <span style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--green)">Currently
+                Available</span>
+            </div>
+            <p style="font-size:0.78rem;color:var(--text-2);line-height:1.7;">
+              Open to internship opportunities, data analysis projects, and collaborations in the
+              AI &amp; Data Science space. Based in Navi Mumbai — open to remote and hybrid roles.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">VM<span style="color:var(--cyan)">.</span></div>
+    <p class="footer-copy">© 2025 Varun Ram Mhatre — Navi Mumbai, India</p>
+    <div class="footer-links">
+      <a href="https://github.com/Varun-200646" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/varun-mhatre-1a9438338/" target="_blank">LinkedIn</a>
+      <a href="https://www.hackerrank.com/profile/varunmhatre46" target="_blank">HackerRank</a>
+      <a href="mailto:varunmhatre2324@ternaengg.ac.in">Email</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Varun Mhatre</title>
+  <meta name="description" content="Portfolio projects by Varun Ram Mhatre — Power BI dashboards, Python apps, data analysis, and web development.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Filter bar */
+    .filter-bar {
+      display: flex; gap: 0.5rem; flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .filter-btn {
+      padding: 0.4rem 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--cyan);
+      color: var(--cyan);
+      background: var(--cyan-dim);
+    }
+
+    /* Detail card layout */
+    .project-detail {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 0;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5px;
+    }
+    .project-detail-main {
+      background: var(--card);
+      padding: 2.5rem;
+      transition: background 0.2s;
+    }
+    .project-detail:hover .project-detail-main { background: var(--card-hover); }
+
+    .project-detail-side {
+      background: var(--surface);
+      border-left: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+
+    .detail-section-label {
+      font-size: 0.6rem;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--text-3);
+      margin-bottom: 0.6rem;
+    }
+
+    .kpis-list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .kpi-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .kpi-row:last-child { border-bottom: none; }
+    .kpi-label { font-size: 0.68rem; color: var(--text-2); }
+    .kpi-val {
+      font-family: 'Cabinet Grotesk', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--cyan);
+    }
+
+    .highlights-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .highlight-item {
+      font-size: 0.75rem; color: var(--text-2);
+      padding-left: 1rem; position: relative; line-height: 1.6;
+    }
+    .highlight-item::before {
+      content: '→';
+      position: absolute; left: 0;
+      color: var(--accent-color, var(--cyan));
+    }
+
+    @media (max-width: 768px) {
+      .project-detail { grid-template-columns: 1fr; }
+      .project-detail-side { border-left: none; border-top: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-noise"></div>
+<div class="site-grid"></div>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">VM<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-mobile-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-overlay">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <div class="page-hero reveal">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Projects</span>
+    </div>
+    <h1>My <em style="font-family:'Instrument Serif',serif;font-style:italic;color:var(--text-2)">Projects</em></h1>
+    <p>End-to-end data projects, interactive dashboards, Python applications, and web development — all built from scratch.</p>
+  </div>
+
+  <section class="section">
+
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All (5)</button>
+      <button class="filter-btn" data-filter="powerbi">Power BI</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+    </div>
+
+    <!-- PROJECT 1: E-Commerce Dashboard -->
+    <div class="project-detail reveal" data-category="powerbi" style="--accent-color:var(--cyan)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--cyan)">Power BI · Data Analytics · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          E-Commerce Sales Dashboard
+        </h3>
+        <p class="project-desc">
+          A comprehensive Power BI report designed to analyze the complete sales performance of an
+          e-commerce business. The dashboard helps stakeholders understand which product categories
+          sell the most, which cities and states generate the highest revenue, which sub-categories
+          are most profitable, and how customers prefer to pay.
+        </p>
+        <p class="project-desc" style="margin-top:0.75rem;">
+          Built an end-to-end data pipeline starting with raw CSV files, transforming them using
+          Power Query, designing a star schema data model, and creating DAX measures for all KPIs.
+          The result is a fully interactive, filter-driven dashboard optimized for business decision-making.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Performed full ETL pipeline with Power Query transformation and data cleaning</div>
+          <div class="highlight-item">Designed star schema data model linking Orders and Details tables</div>
+          <div class="highlight-item">Implemented Month and State slicers for deep-dive regional analysis</div>
+          <div class="highlight-item">Created interactive donut, bar, and line chart visualizations</div>
+          <div class="highlight-item">Built YoY growth, Repeat Customer Rate, and Profit Margin KPIs</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Power BI</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Star Schema</span>
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">KPI Development</span>
+          <span class="tag">Data Modeling</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Personal Project · 2025</span>
+          <a href="https://github.com/Varun-200646/E-Commerce-Sales-Dashboard" target="_blank" class="project-link" style="color:var(--cyan)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Key KPIs</div>
+          <div class="kpis-list">
+            <div class="kpi-row"><span class="kpi-label">Total Sales</span><span class="kpi-val">438K</span></div>
+            <div class="kpi-row"><span class="kpi-label">Total Profit</span><span class="kpi-val">37K</span></div>
+            <div class="kpi-row"><span class="kpi-label">Total Qty Sold</span><span class="kpi-val">6K</span></div>
+            <div class="kpi-row"><span class="kpi-label">Avg Profit / Order</span><span class="kpi-val">120.9K</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Tech Stack</div>
+          <div class="project-tags">
+            <span class="tag">Power BI Desktop</span>
+            <span class="tag">Power Query</span>
+            <span class="tag">DAX</span>
+            <span class="tag">CSV Data</span>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--cyan)">Business Intelligence</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Transport Dashboard -->
+    <div class="project-detail reveal" data-category="powerbi" style="--accent-color:var(--purple)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--purple)">Power BI · Logistics Analytics · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Transport Delivery Performance Dashboard
+        </h3>
+        <p class="project-desc">
+          An enterprise-grade operational Power BI dashboard for a logistics and transport business.
+          Enables operations managers to track delivery performance, identify delay patterns,
+          monitor driver productivity, and optimize route efficiency — all through real-time
+          interactive filtering.
+        </p>
+        <p class="project-desc" style="margin-top:0.75rem;">
+          The dashboard includes advanced DAX measures including calculated on-time percentage,
+          fuel efficiency ratios, and route-wise aggregations. Scatter charts were used to
+          visualize the relationship between route distance and fuel consumption across states.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Tracked 500 deliveries with on-time rate, delay analysis, and trend monitoring</div>
+          <div class="highlight-item">Built driver performance scorecard table with custom DAX measures</div>
+          <div class="highlight-item">Created fuel usage by state pie chart and route efficiency scatter plot</div>
+          <div class="highlight-item">Implemented month, driver, and state slicers for operational drill-down</div>
+          <div class="highlight-item">Designed clean, business-focused visual layout and color theme</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Data Modeling</span>
+          <span class="tag">Logistics</span>
+          <span class="tag">KPIs</span>
+          <span class="tag">XLSX Data</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Personal Project · 2025</span>
+          <a href="https://github.com/Varun-200646/Transport-Delivery-Performance-" target="_blank" class="project-link" style="color:var(--purple)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Key KPIs</div>
+          <div class="kpis-list">
+            <div class="kpi-row"><span class="kpi-label">Total Deliveries</span><span class="kpi-val" style="color:var(--purple)">500</span></div>
+            <div class="kpi-row"><span class="kpi-label">On-Time Deliveries</span><span class="kpi-val" style="color:var(--purple)">291</span></div>
+            <div class="kpi-row"><span class="kpi-label">On-Time Rate</span><span class="kpi-val" style="color:var(--purple)">58.2%</span></div>
+            <div class="kpi-row"><span class="kpi-label">Total Distance</span><span class="kpi-val" style="color:var(--purple)">374K km</span></div>
+            <div class="kpi-row"><span class="kpi-label">Fuel Efficiency</span><span class="kpi-val" style="color:var(--purple)">7.28 km/L</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--purple)">Logistics & Operations</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: Job Tracker -->
+    <div class="project-detail reveal" data-category="python" style="--accent-color:var(--green)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--green)">Python · Web Application · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Job Application Tracker
+        </h3>
+        <p class="project-desc">
+          A Python-based application to help job seekers systematically organize and track
+          their job search. The app allows users to add job listings, update application
+          statuses (Applied, Interview, Offer, Rejected), set deadlines, and view their
+          entire pipeline at a glance.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Full CRUD functionality for managing job applications</div>
+          <div class="highlight-item">Status tracking across application lifecycle stages</div>
+          <div class="highlight-item">Clean, organized interface for job search management</div>
+          <div class="highlight-item">Built using Python with data persistence</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">CRUD</span>
+          <span class="tag">Web App</span>
+          <span class="tag">Data Management</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Personal Project · 2025</span>
+          <a href="https://github.com/Varun-200646/Job-Tracker" target="_blank" class="project-link" style="color:var(--green)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Core Features</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:var(--green)">Application CRUD operations</div>
+            <div class="highlight-item" style="--accent-color:var(--green)">Status lifecycle tracking</div>
+            <div class="highlight-item" style="--accent-color:var(--green)">Job pipeline overview</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--green)">Python · Productivity Tool</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4: Hackathon -->
+    <div class="project-detail reveal" data-category="python" style="--accent-color:var(--orange)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--orange)">Python · Data Analysis · Hackathon · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Data Analysis Hackathon Project
+        </h3>
+        <p class="project-desc">
+          A competitive data analysis project submitted during a hackathon. Applied the full
+          EDA pipeline to a real-world dataset — from data loading and cleaning to feature
+          engineering, statistical analysis, and insight visualization. The goal was to surface
+          actionable findings under time pressure.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Performed comprehensive Exploratory Data Analysis (EDA)</div>
+          <div class="highlight-item">Applied data cleaning, null handling, and outlier treatment</div>
+          <div class="highlight-item">Created visualizations using Matplotlib and Seaborn</div>
+          <div class="highlight-item">Derived insights and presented data-driven recommendations</div>
+          <div class="highlight-item">Delivered under hackathon time constraints</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+          <span class="tag">EDA</span>
+          <span class="tag">Feature Engineering</span>
+          <span class="tag">Statistics</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Hackathon · 2025</span>
+          <a href="https://github.com/Varun-200646/Data-Analysis-Hackathon-Project" target="_blank" class="project-link" style="color:var(--orange)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Approach</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:var(--orange)">Data loading & inspection</div>
+            <div class="highlight-item" style="--accent-color:var(--orange)">Cleaning & preprocessing</div>
+            <div class="highlight-item" style="--accent-color:var(--orange)">EDA & visualization</div>
+            <div class="highlight-item" style="--accent-color:var(--orange)">Insight extraction</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--orange)">Data Analysis · Competition</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 5: To-Do List -->
+    <div class="project-detail reveal" data-category="web" style="--accent-color:var(--red)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--red)">HTML · CSS · JavaScript · 2024</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Beginner's To-Do List App
+        </h3>
+        <p class="project-desc">
+          A clean, functional to-do list web application built with vanilla HTML, CSS, and JavaScript.
+          Users can add, complete, and delete tasks with a smooth, responsive interface. The project
+          was part of the frontend web development learning journey, focusing on DOM manipulation
+          and state management without frameworks.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Task add, complete, and delete functionality</div>
+          <div class="highlight-item">Clean, responsive UI built with vanilla CSS</div>
+          <div class="highlight-item">DOM manipulation and event handling in JavaScript</div>
+          <div class="highlight-item">Local state management without external libraries</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">DOM Manipulation</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Learning Project · 2024</span>
+          <a href="https://github.com/Varun-200646/Beginners-To-Do-List" target="_blank" class="project-link" style="color:var(--red)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Skills Practiced</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:var(--red)">HTML semantics</div>
+            <div class="highlight-item" style="--accent-color:var(--red)">CSS styling & layout</div>
+            <div class="highlight-item" style="--accent-color:var(--red)">JS events & DOM API</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--red)">Frontend Web Development</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">VM<span style="color:var(--cyan)">.</span></div>
+  <p class="footer-copy">© 2025 Varun Ram Mhatre — Navi Mumbai, India</p>
+  <div class="footer-links">
+    <a href="https://github.com/Varun-200646" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/varun-mhatre-1a9438338/" target="_blank">LinkedIn</a>
+    <a href="https://www.hackerrank.com/profile/varunmhatre46" target="_blank">HackerRank</a>
+    <a href="mailto:varunmhatre2324@ternaengg.ac.in">Email</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-detail');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      projectItems.forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

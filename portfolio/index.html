@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun Mhatre — AI & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Varun Ram Mhatre — B.E. student in AI & Data Science at Terna Engineering College. Data analyst, Power BI developer, Python enthusiast.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="site-noise"></div>
+<div class="site-grid"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">VM<span class="dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="nav-mobile-btn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav-overlay">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">Available for internships &amp; collaborations</div>
+      <h1>
+        Turning raw<br>
+        data into<br>
+        <em>insight.</em>
+      </h1>
+      <p class="hero-sub">
+        I'm Varun — a B.E. student in AI &amp; Data Science at Terna Engineering College,
+        Navi Mumbai. I build end-to-end analytics dashboards, track meaningful KPIs,
+        and explore data across its full lifecycle.
+      </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View My Work →</a>
+        <a href="about.html" class="btn btn-outline">About Me</a>
+        <a href="https://github.com/Varun-200646" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dot td-r"></div>
+          <div class="terminal-dot td-y"></div>
+          <div class="terminal-dot td-g"></div>
+          <span class="terminal-title">varun@portfolio ~ zsh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line">
+            <span class="term-prompt">❯</span>
+            <span class="term-cmd">whoami</span>
+          </div>
+          <p class="term-out highlight">Varun Ram Mhatre</p>
+
+          <div class="term-line">
+            <span class="term-prompt">❯</span>
+            <span class="term-cmd">cat role.txt</span>
+          </div>
+          <p class="term-out">B.E. AI &amp; Data Science Student</p>
+
+          <div class="term-line">
+            <span class="term-prompt">❯</span>
+            <span class="term-cmd">cat skills.json | jq '.top[]'</span>
+          </div>
+          <p class="term-out">"Python" "Power BI" "SQL"<br>"Pandas" "DAX" "Tableau"<br>"ETL" "MySQL" "MongoDB"</p>
+
+          <div class="term-line">
+            <span class="term-prompt">❯</span>
+            <span class="term-cmd">cat gpa.txt</span>
+          </div>
+          <p class="term-out highlight">8.31 / 10.0  ✓</p>
+
+          <div class="term-line">
+            <span class="term-prompt">❯</span>
+            <span class="term-cmd">ls projects/</span>
+          </div>
+          <p class="term-out">
+            ecommerce-dashboard/ &nbsp; transport-perf/<br>
+            job-tracker/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; todo-app/<br>
+            hackathon-analysis/<span class="term-cursor"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip reveal">
+    <div class="stat-block">
+      <div class="stat-num">8.31</div>
+      <div class="stat-label">GPA / 10</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Certifications</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">9</div>
+      <div class="stat-label">GitHub Repos</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-num">2027</div>
+      <div class="stat-label">Graduating</div>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section">
+    <div class="reveal">
+      <p class="section-tag">Work</p>
+      <h2 class="section-title">Featured <em>Projects</em></h2>
+      <p class="section-desc">
+        A selection of dashboards, apps, and data projects — each one solving a real-world problem
+        with data. Built with Power BI, Python, and core web technologies.
+      </p>
+    </div>
+
+    <div class="projects-grid stagger">
+      <!-- Featured: E-Commerce -->
+      <div class="project-card featured" style="--accent-color: var(--cyan)">
+        <div class="project-type">Power BI · Data Analytics</div>
+        <h3>E-Commerce Sales Dashboard</h3>
+        <p class="project-desc">
+          End-to-end Power BI report analyzing ₹438K in sales, profit trends, customer segments,
+          and category-wise performance across Indian cities and states. Built on a star schema
+          data model with full Power Query data transformation pipeline.
+        </p>
+        <div class="project-metrics">
+          <div class="metric"><strong>438K</strong> Total Sales</div>
+          <div class="metric"><strong>37K</strong> Total Profit</div>
+          <div class="metric"><strong>6K</strong> Qty Sold</div>
+          <div class="metric"><strong>120.9K</strong> Avg Profit/Order</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Star Schema</span>
+          <span class="tag">KPI Development</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2025</span>
+          <a href="https://github.com/Varun-200646/E-Commerce-Sales-Dashboard" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Transport -->
+      <div class="project-card" style="--accent-color: var(--purple)">
+        <div class="project-type">Power BI · Logistics</div>
+        <h3>Transport Delivery Performance</h3>
+        <p class="project-desc">
+          Operational dashboard tracking on-time delivery rates, driver performance,
+          fuel efficiency, and route analysis across 500 deliveries.
+        </p>
+        <div class="project-metrics">
+          <div class="metric"><strong>58.2%</strong> On-Time Rate</div>
+          <div class="metric"><strong>374K km</strong> Distance</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Logistics Analytics</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2025</span>
+          <a href="https://github.com/Varun-200646/Transport-Delivery-Performance-" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Job Tracker -->
+      <div class="project-card" style="--accent-color: var(--green)">
+        <div class="project-type">Python · Web App</div>
+        <h3>Job Application Tracker</h3>
+        <p class="project-desc">
+          A Python-based web application to track, manage, and analyze job applications
+          with status updates, deadlines, and company insights.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Web App</span>
+          <span class="tag">CRUD</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2025</span>
+          <a href="https://github.com/Varun-200646/Job-Tracker" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Hackathon -->
+      <div class="project-card" style="--accent-color: var(--orange)">
+        <div class="project-type">Python · Data Analysis · Hackathon</div>
+        <h3>Data Analysis Hackathon</h3>
+        <p class="project-desc">
+          Competitive data analysis project built during a hackathon. Applied EDA, feature
+          engineering, and visualization to surface actionable insights from real-world data.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">EDA</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2025</span>
+          <a href="https://github.com/Varun-200646/Data-Analysis-Hackathon-Project" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Todo App -->
+      <div class="project-card" style="--accent-color: var(--red)">
+        <div class="project-type">HTML · CSS · JavaScript</div>
+        <h3>Beginner's To-Do List App</h3>
+        <p class="project-desc">
+          A clean, functional to-do list web app with task management, local state,
+          and a polished UI — built as part of the frontend learning journey.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">DOM</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-year">2024</span>
+          <a href="https://github.com/Varun-200646/Beginners-To-Do-List" target="_blank" class="project-link">GitHub →</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;" class="reveal">
+      <a href="projects.html" class="btn btn-outline">See All Projects →</a>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS STRIP -->
+  <section class="section" style="padding-top:0">
+    <div class="reveal">
+      <p class="section-tag">Credentials</p>
+      <h2 class="section-title">Certifi<em>cations</em></h2>
+    </div>
+    <div class="certs-grid stagger">
+      <div class="cert-card">
+        <div class="cert-icon-wrap">🐍</div>
+        <div class="cert-name">Python Basic</div>
+        <div class="cert-issuer">HackerRank</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon-wrap">🗄️</div>
+        <div class="cert-name">SQL Basic</div>
+        <div class="cert-issuer">HackerRank</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon-wrap">📊</div>
+        <div class="cert-name">SQL Intermediate</div>
+        <div class="cert-issuer">HackerRank</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon-wrap">🔍</div>
+        <div class="cert-name">Google Data Analytics</div>
+        <div class="cert-issuer">Coursera · Google</div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page -->
+
+<footer class="footer">
+  <div class="footer-logo">VM<span style="color:var(--cyan)">.</span></div>
+  <p class="footer-copy">© 2025 Varun Ram Mhatre — Navi Mumbai, India</p>
+  <div class="footer-links">
+    <a href="https://github.com/Varun-200646" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/varun-mhatre-1a9438338/" target="_blank">LinkedIn</a>
+    <a href="https://www.hackerrank.com/profile/varunmhatre46" target="_blank">HackerRank</a>
+    <a href="mailto:varunmhatre2324@ternaengg.ac.in">Email</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

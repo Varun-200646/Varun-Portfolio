@@ -134,16 +134,101 @@
   <section class="section">
 
     <div class="filter-bar reveal">
-      <button class="filter-btn active" data-filter="all">All (5)</button>
-      <button class="filter-btn" data-filter="powerbi">Power BI</button>
-      <button class="filter-btn" data-filter="python">Python</button>
-      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="data-science">Data Science</button>
+      <button class="filter-btn" data-filter="data-analyst">Data Analyst</button>
+      <button class="filter-btn" data-filter="web-dev">Web Dev</button>
     </div>
 
-    <!-- PROJECT 1: E-Commerce Dashboard -->
-    <div class="project-detail reveal" data-category="powerbi" style="--accent-color:var(--cyan)">
+    <!-- PROJECT 1: Customer Churn Prediction -->
+    <div class="project-detail reveal" data-category="data-science" style="--accent-color:var(--cyan)">
       <div class="project-detail-main">
-        <div class="project-type" style="color:var(--cyan)">Power BI · Data Analytics · 2025</div>
+        <div class="project-type" style="color:var(--cyan)">Data Science · Machine Learning · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Telco Customer Churn Predictor
+        </h3>
+        <p class="project-desc">
+          A production-grade, end-to-end Machine Learning pipeline and interactive Explainable AI (XAI) dashboard built on the IBM Telco Customer Churn dataset. Focuses on explainability utilizing SHAP values to reveal the exact service and financial factors driving real-time churn predictions.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">SMOTE balancing for severe class imbalance</div>
+          <div class="highlight-item">Comparative model benchmarking: Logistic Regression, Random Forest, LightGBM</div>
+          <div class="highlight-item">Global & Local interpretability with SHAP</div>
+          <div class="highlight-item">Interactive Streamlit dashboard for real-time profiling</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">LightGBM</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">SHAP</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Personal Project · 2025</span>
+          <a href="https://github.com/Varun-200646/Customer-Churn-prediction" target="_blank" class="project-link" style="color:var(--cyan)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Core Tech</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:var(--cyan)">Python 3.8+</div>
+            <div class="highlight-item" style="--accent-color:var(--cyan)">Streamlit UI</div>
+            <div class="highlight-item" style="--accent-color:var(--cyan)">Explainable AI (SHAP)</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--cyan)">Data Science</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Digital Addiction Prediction -->
+    <div class="project-detail reveal" data-category="data-science" style="--accent-color:var(--purple)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--purple)">Data Science · Predictive Modeling · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Digital Addiction Prediction
+        </h3>
+        <p class="project-desc">
+          A predictive machine learning model to analyze and predict digital addiction behaviors based on user interaction metrics and behavioral data. Includes data preprocessing, feature engineering, and model training to identify high-risk usage patterns.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Behavioral data analysis and feature extraction</div>
+          <div class="highlight-item">Predictive modeling for risk assessment</div>
+          <div class="highlight-item">Data-driven insights into usage patterns</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Pandas</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Personal Project · 2025</span>
+          <a href="https://github.com/Varun-200646/digital_addiction_prediction" target="_blank" class="project-link" style="color:var(--purple)">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Core Tech</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:var(--purple)">Python</div>
+            <div class="highlight-item" style="--accent-color:var(--purple)">Machine Learning</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:var(--purple)">Data Science</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: E-Commerce Dashboard -->
+    <div class="project-detail reveal" data-category="data-analyst" style="--accent-color:var(--orange)">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:var(--orange)">Power BI · Data Analytics · 2025</div>
         <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
           E-Commerce Sales Dashboard
         </h3>
@@ -156,135 +241,140 @@
         <p class="project-desc" style="margin-top:0.75rem;">
           Built an end-to-end data pipeline starting with raw CSV files, transforming them using
           Power Query, designing a star schema data model, and creating DAX measures for all KPIs.
-          The result is a fully interactive, filter-driven dashboard optimized for business decision-making.
         </p>
         <div class="highlights-list" style="margin-top:1.5rem;">
-          <div class="highlight-item">Performed full ETL pipeline with Power Query transformation and data cleaning</div>
-          <div class="highlight-item">Designed star schema data model linking Orders and Details tables</div>
-          <div class="highlight-item">Implemented Month and State slicers for deep-dive regional analysis</div>
-          <div class="highlight-item">Created interactive donut, bar, and line chart visualizations</div>
-          <div class="highlight-item">Built YoY growth, Repeat Customer Rate, and Profit Margin KPIs</div>
+          <div class="highlight-item">Performed full ETL pipeline with Power Query transformation</div>
+          <div class="highlight-item">Designed star schema data model</div>
+          <div class="highlight-item">Created interactive visualizations and DAX measures</div>
         </div>
         <div class="project-tags" style="margin-top:1.5rem;">
           <span class="tag">Power BI</span>
           <span class="tag">Power Query</span>
           <span class="tag">DAX</span>
-          <span class="tag">Star Schema</span>
-          <span class="tag">Data Cleaning</span>
-          <span class="tag">KPI Development</span>
-          <span class="tag">Data Modeling</span>
         </div>
         <div class="project-footer" style="margin-top:1.5rem;">
           <span class="project-year">Personal Project · 2025</span>
-          <a href="https://github.com/Varun-200646/E-Commerce-Sales-Dashboard" target="_blank" class="project-link" style="color:var(--cyan)">View on GitHub →</a>
+          <a href="https://github.com/Varun-200646/E-Commerce-Sales-Dashboard" target="_blank" class="project-link" style="color:var(--orange)">View on GitHub →</a>
         </div>
       </div>
       <div class="project-detail-side">
         <div>
           <div class="detail-section-label">Key KPIs</div>
           <div class="kpis-list">
-            <div class="kpi-row"><span class="kpi-label">Total Sales</span><span class="kpi-val">438K</span></div>
-            <div class="kpi-row"><span class="kpi-label">Total Profit</span><span class="kpi-val">37K</span></div>
-            <div class="kpi-row"><span class="kpi-label">Total Qty Sold</span><span class="kpi-val">6K</span></div>
-            <div class="kpi-row"><span class="kpi-label">Avg Profit / Order</span><span class="kpi-val">120.9K</span></div>
-          </div>
-        </div>
-        <div>
-          <div class="detail-section-label">Tech Stack</div>
-          <div class="project-tags">
-            <span class="tag">Power BI Desktop</span>
-            <span class="tag">Power Query</span>
-            <span class="tag">DAX</span>
-            <span class="tag">CSV Data</span>
+            <div class="kpi-row"><span class="kpi-label">Total Sales</span><span class="kpi-val" style="color:var(--orange)">438K</span></div>
+            <div class="kpi-row"><span class="kpi-label">Total Profit</span><span class="kpi-val" style="color:var(--orange)">37K</span></div>
           </div>
         </div>
         <div>
           <div class="detail-section-label">Category</div>
-          <p style="font-size:0.75rem;color:var(--cyan)">Business Intelligence</p>
+          <p style="font-size:0.75rem;color:var(--orange)">Data Analyst</p>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT 2: Transport Dashboard -->
-    <div class="project-detail reveal" data-category="powerbi" style="--accent-color:var(--purple)">
+    <!-- PROJECT 4: Transport Dashboard -->
+    <div class="project-detail reveal" data-category="data-analyst" style="--accent-color:#00BFFF">
       <div class="project-detail-main">
-        <div class="project-type" style="color:var(--purple)">Power BI · Logistics Analytics · 2025</div>
+        <div class="project-type" style="color:#00BFFF">Power BI · Logistics Analytics · 2025</div>
         <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
           Transport Delivery Performance Dashboard
         </h3>
         <p class="project-desc">
           An enterprise-grade operational Power BI dashboard for a logistics and transport business.
           Enables operations managers to track delivery performance, identify delay patterns,
-          monitor driver productivity, and optimize route efficiency — all through real-time
-          interactive filtering.
-        </p>
-        <p class="project-desc" style="margin-top:0.75rem;">
-          The dashboard includes advanced DAX measures including calculated on-time percentage,
-          fuel efficiency ratios, and route-wise aggregations. Scatter charts were used to
-          visualize the relationship between route distance and fuel consumption across states.
+          monitor driver productivity, and optimize route efficiency.
         </p>
         <div class="highlights-list" style="margin-top:1.5rem;">
-          <div class="highlight-item">Tracked 500 deliveries with on-time rate, delay analysis, and trend monitoring</div>
-          <div class="highlight-item">Built driver performance scorecard table with custom DAX measures</div>
-          <div class="highlight-item">Created fuel usage by state pie chart and route efficiency scatter plot</div>
-          <div class="highlight-item">Implemented month, driver, and state slicers for operational drill-down</div>
-          <div class="highlight-item">Designed clean, business-focused visual layout and color theme</div>
+          <div class="highlight-item">Tracked 500 deliveries with on-time rate and delay analysis</div>
+          <div class="highlight-item">Built driver performance scorecard with custom DAX</div>
         </div>
         <div class="project-tags" style="margin-top:1.5rem;">
           <span class="tag">Power BI</span>
           <span class="tag">DAX</span>
-          <span class="tag">Data Modeling</span>
           <span class="tag">Logistics</span>
-          <span class="tag">KPIs</span>
-          <span class="tag">XLSX Data</span>
         </div>
         <div class="project-footer" style="margin-top:1.5rem;">
           <span class="project-year">Personal Project · 2025</span>
-          <a href="https://github.com/Varun-200646/Transport-Delivery-Performance-" target="_blank" class="project-link" style="color:var(--purple)">View on GitHub →</a>
+          <a href="https://github.com/Varun-200646/Transport-Delivery-Performance-" target="_blank" class="project-link" style="color:#00BFFF">View on GitHub →</a>
         </div>
       </div>
       <div class="project-detail-side">
         <div>
           <div class="detail-section-label">Key KPIs</div>
           <div class="kpis-list">
-            <div class="kpi-row"><span class="kpi-label">Total Deliveries</span><span class="kpi-val" style="color:var(--purple)">500</span></div>
-            <div class="kpi-row"><span class="kpi-label">On-Time Deliveries</span><span class="kpi-val" style="color:var(--purple)">291</span></div>
-            <div class="kpi-row"><span class="kpi-label">On-Time Rate</span><span class="kpi-val" style="color:var(--purple)">58.2%</span></div>
-            <div class="kpi-row"><span class="kpi-label">Total Distance</span><span class="kpi-val" style="color:var(--purple)">374K km</span></div>
-            <div class="kpi-row"><span class="kpi-label">Fuel Efficiency</span><span class="kpi-val" style="color:var(--purple)">7.28 km/L</span></div>
+            <div class="kpi-row"><span class="kpi-label">On-Time Rate</span><span class="kpi-val" style="color:#00BFFF">58.2%</span></div>
+            <div class="kpi-row"><span class="kpi-label">Total Distance</span><span class="kpi-val" style="color:#00BFFF">374K km</span></div>
           </div>
         </div>
         <div>
           <div class="detail-section-label">Category</div>
-          <p style="font-size:0.75rem;color:var(--purple)">Logistics & Operations</p>
+          <p style="font-size:0.75rem;color:#00BFFF">Data Analyst</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- PROJECT 5: Data Analysis Hackathon -->
+    <div class="project-detail reveal" data-category="data-analyst" style="--accent-color:#FFD700">
+      <div class="project-detail-main">
+        <div class="project-type" style="color:#FFD700">Python · Data Analysis · Hackathon · 2025</div>
+        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
+          Data Analysis Hackathon Project
+        </h3>
+        <p class="project-desc">
+          A competitive data analysis project submitted during a hackathon. Applied the full
+          EDA pipeline to a real-world dataset — from data loading and cleaning to feature
+          engineering, statistical analysis, and insight visualization.
+        </p>
+        <div class="highlights-list" style="margin-top:1.5rem;">
+          <div class="highlight-item">Comprehensive Exploratory Data Analysis (EDA)</div>
+          <div class="highlight-item">Visualizations using Matplotlib and Seaborn</div>
+        </div>
+        <div class="project-tags" style="margin-top:1.5rem;">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">EDA</span>
+        </div>
+        <div class="project-footer" style="margin-top:1.5rem;">
+          <span class="project-year">Hackathon · 2025</span>
+          <a href="https://github.com/Varun-200646/Data-Analysis-Hackathon-Project" target="_blank" class="project-link" style="color:#FFD700">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-detail-side">
+        <div>
+          <div class="detail-section-label">Approach</div>
+          <div class="highlights-list">
+            <div class="highlight-item" style="--accent-color:#FFD700">Cleaning & preprocessing</div>
+            <div class="highlight-item" style="--accent-color:#FFD700">EDA & insight extraction</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-section-label">Category</div>
+          <p style="font-size:0.75rem;color:#FFD700">Data Analyst</p>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT 3: Job Tracker -->
-    <div class="project-detail reveal" data-category="python" style="--accent-color:var(--green)">
+    <!-- PROJECT 6: Job Tracker -->
+    <div class="project-detail reveal" data-category="web-dev" style="--accent-color:var(--green)">
       <div class="project-detail-main">
-        <div class="project-type" style="color:var(--green)">Python · Web Application · 2025</div>
+        <div class="project-type" style="color:var(--green)">Node.js · HTML/CSS/JS · Web App · 2025</div>
         <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
           Job Application Tracker
         </h3>
         <p class="project-desc">
-          A Python-based application to help job seekers systematically organize and track
-          their job search. The app allows users to add job listings, update application
-          statuses (Applied, Interview, Offer, Rejected), set deadlines, and view their
-          entire pipeline at a glance.
+          A full-featured job application tracker built with Node.js and Express backend, allowing job seekers to systematically organize their job search. Includes a Kanban Board to visualize applications across stages (Applied → Interview → Offer → Rejected), Analytics Dashboard, Live Search, and Dark/Light mode.
         </p>
         <div class="highlights-list" style="margin-top:1.5rem;">
-          <div class="highlight-item">Full CRUD functionality for managing job applications</div>
-          <div class="highlight-item">Status tracking across application lifecycle stages</div>
-          <div class="highlight-item">Clean, organized interface for job search management</div>
-          <div class="highlight-item">Built using Python with data persistence</div>
+          <div class="highlight-item">Kanban Board for tracking application lifecycle stages</div>
+          <div class="highlight-item">Analytics Dashboard with donut/bar charts and monthly timeline</div>
+          <div class="highlight-item">Live search to filter by role, company or location</div>
+          <div class="highlight-item">Full CRUD functionality with data persistence</div>
         </div>
         <div class="project-tags" style="margin-top:1.5rem;">
-          <span class="tag">Python</span>
-          <span class="tag">CRUD</span>
-          <span class="tag">Web App</span>
-          <span class="tag">Data Management</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">localStorage</span>
         </div>
         <div class="project-footer" style="margin-top:1.5rem;">
           <span class="project-year">Personal Project · 2025</span>
@@ -295,94 +385,39 @@
         <div>
           <div class="detail-section-label">Core Features</div>
           <div class="highlights-list">
-            <div class="highlight-item" style="--accent-color:var(--green)">Application CRUD operations</div>
-            <div class="highlight-item" style="--accent-color:var(--green)">Status lifecycle tracking</div>
-            <div class="highlight-item" style="--accent-color:var(--green)">Job pipeline overview</div>
+            <div class="highlight-item" style="--accent-color:var(--green)">Kanban Status tracking</div>
+            <div class="highlight-item" style="--accent-color:var(--green)">Analytics Dashboard</div>
+            <div class="highlight-item" style="--accent-color:var(--green)">CRUD operations</div>
           </div>
         </div>
         <div>
           <div class="detail-section-label">Category</div>
-          <p style="font-size:0.75rem;color:var(--green)">Python · Productivity Tool</p>
+          <p style="font-size:0.75rem;color:var(--green)">Web Development</p>
         </div>
       </div>
     </div>
 
-    <!-- PROJECT 4: Hackathon -->
-    <div class="project-detail reveal" data-category="python" style="--accent-color:var(--orange)">
+    <!-- PROJECT 7: To-Do List -->
+    <div class="project-detail reveal" data-category="web-dev" style="--accent-color:var(--red)">
       <div class="project-detail-main">
-        <div class="project-type" style="color:var(--orange)">Python · Data Analysis · Hackathon · 2025</div>
+        <div class="project-type" style="color:var(--red)">Node.js · Express · Web App · 2024</div>
         <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
-          Data Analysis Hackathon Project
+          TaskFlow Productivity App
         </h3>
         <p class="project-desc">
-          A competitive data analysis project submitted during a hackathon. Applied the full
-          EDA pipeline to a real-world dataset — from data loading and cleaning to feature
-          engineering, statistical analysis, and insight visualization. The goal was to surface
-          actionable findings under time pressure.
-        </p>
-        <div class="highlights-list" style="margin-top:1.5rem;">
-          <div class="highlight-item">Performed comprehensive Exploratory Data Analysis (EDA)</div>
-          <div class="highlight-item">Applied data cleaning, null handling, and outlier treatment</div>
-          <div class="highlight-item">Created visualizations using Matplotlib and Seaborn</div>
-          <div class="highlight-item">Derived insights and presented data-driven recommendations</div>
-          <div class="highlight-item">Delivered under hackathon time constraints</div>
-        </div>
-        <div class="project-tags" style="margin-top:1.5rem;">
-          <span class="tag">Python</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">Matplotlib</span>
-          <span class="tag">Seaborn</span>
-          <span class="tag">EDA</span>
-          <span class="tag">Feature Engineering</span>
-          <span class="tag">Statistics</span>
-        </div>
-        <div class="project-footer" style="margin-top:1.5rem;">
-          <span class="project-year">Hackathon · 2025</span>
-          <a href="https://github.com/Varun-200646/Data-Analysis-Hackathon-Project" target="_blank" class="project-link" style="color:var(--orange)">View on GitHub →</a>
-        </div>
-      </div>
-      <div class="project-detail-side">
-        <div>
-          <div class="detail-section-label">Approach</div>
-          <div class="highlights-list">
-            <div class="highlight-item" style="--accent-color:var(--orange)">Data loading & inspection</div>
-            <div class="highlight-item" style="--accent-color:var(--orange)">Cleaning & preprocessing</div>
-            <div class="highlight-item" style="--accent-color:var(--orange)">EDA & visualization</div>
-            <div class="highlight-item" style="--accent-color:var(--orange)">Insight extraction</div>
-          </div>
-        </div>
-        <div>
-          <div class="detail-section-label">Category</div>
-          <p style="font-size:0.75rem;color:var(--orange)">Data Analysis · Competition</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT 5: To-Do List -->
-    <div class="project-detail reveal" data-category="web" style="--accent-color:var(--red)">
-      <div class="project-detail-main">
-        <div class="project-type" style="color:var(--red)">HTML · CSS · JavaScript · 2024</div>
-        <h3 style="font-family:'Cabinet Grotesk',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
-          Beginner's To-Do List App
-        </h3>
-        <p class="project-desc">
-          A clean, functional to-do list web application built with vanilla HTML, CSS, and JavaScript.
-          Users can add, complete, and delete tasks with a smooth, responsive interface. The project
-          was part of the frontend web development learning journey, focusing on DOM manipulation
-          and state management without frameworks.
+          A clean, minimal productivity web app built with Node.js and Express. Features a fully functional to-do list with adding, deleting, and completing tasks, along with priority tags, search & filtering, live stats, and a dark/light mode toggle.
         </p>
         <div class="highlights-list" style="margin-top:1.5rem;">
           <div class="highlight-item">Task add, complete, and delete functionality</div>
-          <div class="highlight-item">Clean, responsive UI built with vanilla CSS</div>
-          <div class="highlight-item">DOM manipulation and event handling in JavaScript</div>
-          <div class="highlight-item">Local state management without external libraries</div>
+          <div class="highlight-item">Search and filter tasks (All / Active / Done)</div>
+          <div class="highlight-item">Priority tags (High / Medium / Low) and live stats</div>
+          <div class="highlight-item">Dark / Light mode toggle with persistent state</div>
         </div>
         <div class="project-tags" style="margin-top:1.5rem;">
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">DOM Manipulation</span>
-          <span class="tag">Responsive Design</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">HTML/CSS/JS</span>
+          <span class="tag">Web App</span>
         </div>
         <div class="project-footer" style="margin-top:1.5rem;">
           <span class="project-year">Learning Project · 2024</span>
@@ -393,14 +428,14 @@
         <div>
           <div class="detail-section-label">Skills Practiced</div>
           <div class="highlights-list">
-            <div class="highlight-item" style="--accent-color:var(--red)">HTML semantics</div>
-            <div class="highlight-item" style="--accent-color:var(--red)">CSS styling & layout</div>
-            <div class="highlight-item" style="--accent-color:var(--red)">JS events & DOM API</div>
+            <div class="highlight-item" style="--accent-color:var(--red)">Backend Development</div>
+            <div class="highlight-item" style="--accent-color:var(--red)">UI/UX Design</div>
+            <div class="highlight-item" style="--accent-color:var(--red)">State Management</div>
           </div>
         </div>
         <div>
           <div class="detail-section-label">Category</div>
-          <p style="font-size:0.75rem;color:var(--red)">Frontend Web Development</p>
+          <p style="font-size:0.75rem;color:var(--red)">Web Development</p>
         </div>
       </div>
     </div>

@@ -112,7 +112,84 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // ---- Cursor glow (desktop only) ----
+  // ---- Certificate Category Filters ----
+  const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+  const certCards = document.querySelectorAll('.cert-modern-card');
+  const certSpotlight = document.querySelector('.cert-spotlight');
+
+  if (certFilterBtns.length > 0) {
+    certFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        certFilterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        // Spotlight card visibility
+        if (certSpotlight) {
+          if (filter === 'all' || filter === 'hackathon') {
+            certSpotlight.style.display = 'block';
+          } else {
+            certSpotlight.style.display = 'none';
+          }
+        }
+
+        // Modern cards visibility
+        certCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+  // ---- Certificate Lightbox Modal ----
+  const certModal = document.getElementById('certModal');
+  const certModalImg = document.getElementById('certModalImg');
+  const certModalTitle = document.getElementById('certModalTitle');
+  const certModalOpenTab = document.getElementById('certModalOpenTab');
+  const certModalClose = document.getElementById('certModalClose');
+  const certModalBackdrop = document.getElementById('certModalBackdrop');
+  const certTriggers = document.querySelectorAll('.cert-trigger');
+
+  function openCertModal(imgSrc, title) {
+    if (!certModal || !certModalImg) return;
+    certModalImg.src = imgSrc;
+    if (certModalTitle) certModalTitle.textContent = title || 'Certificate Preview';
+    if (certModalOpenTab) certModalOpenTab.href = imgSrc;
+    certModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    if (!certModal) return;
+    certModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  certTriggers.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const imgSrc = el.dataset.img || el.getAttribute('data-img');
+      const title = el.dataset.title || el.getAttribute('data-title');
+      if (imgSrc) openCertModal(imgSrc, title);
+    });
+  });
+
+  if (certModalClose) certModalClose.addEventListener('click', closeCertModal);
+  if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertModal);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal && certModal.classList.contains('open')) {
+      closeCertModal();
+    }
+  });
+
+
+    // ---- Cursor glow (desktop only) ----
   if (window.innerWidth > 768) {
     const glow = document.createElement('div');
     glow.className = 'cursor-glow-el';

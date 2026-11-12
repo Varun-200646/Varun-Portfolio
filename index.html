@@ -117,8 +117,8 @@
       <div class="stat-label">Projects Built</div>
     </div>
     <div class="stat-block">
-      <div class="stat-num">4</div>
-      <div class="stat-label">Certifications</div>
+      <div class="stat-num">13</div>
+      <div class="stat-label">Certifications &amp; Honors</div>
     </div>
     <div class="stat-block">
       <div class="stat-num">9</div>
@@ -207,110 +207,357 @@
     </div>
   </section>
 
-  <!-- CERTIFICATIONS STRIP -->
-  <section class="section" style="padding-top:0">
+  <!-- CERTIFICATES & ACHIEVEMENTS -->
+  <section class="section" id="certificates" style="padding-top: 2rem;">
     <div class="reveal">
-      <p class="section-tag">Credentials</p>
-      <h2 class="section-title">Certifi<em>cations</em></h2>
-    </div>
-    <div class="certs-grid stagger">
-      <div class="cert-card">
-        <div class="cert-icon-wrap">🐍</div>
-        <div class="cert-name">Python Basic</div>
-        <div class="cert-issuer">HackerRank</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon-wrap">🗄️</div>
-        <div class="cert-name">SQL Basic</div>
-        <div class="cert-issuer">HackerRank</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon-wrap">📊</div>
-        <div class="cert-name">SQL Intermediate</div>
-        <div class="cert-issuer">HackerRank</div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon-wrap">🔍</div>
-        <div class="cert-name">Google Data Analytics</div>
-        <div class="cert-issuer">Coursera · Google</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HACKATHON ACHIEVEMENTS -->
-  <section class="section" id="hackathons">
-    <div class="reveal">
-      <p class="section-tag">Achievements</p>
-      <h2 class="section-title">Hackathon <em>Experience</em></h2>
-      <p class="section-desc">
-        Competing under pressure, building fast, and learning faster — hackathons are where ideas become reality in hours.
-      </p>
-    </div>
-
-    <div class="hackathon-grid stagger">
-      <div class="hackathon-card">
-        <div class="hackathon-cert-wrap">
-          <div class="hackathon-cert-glow"></div>
-          <img src="assets/certificates/recode-hackathon-certificate.png" alt="Recode Hackathon Certificate of Accomplishment — Varun Mhatre" class="hackathon-cert-img" loading="lazy">
-          <div class="hackathon-cert-badge">
-            <span class="hackathon-cert-badge-icon">🏆</span>
-            <span>Top 15 Teams</span>
-          </div>
+      <div class="cert-section-header">
+        <div>
+          <p class="section-tag">Credentials &amp; Recognition</p>
+          <h2 class="section-title">Certificates <em>&amp; Honors</em></h2>
+          <p class="section-desc" style="margin-bottom: 0;">
+            Verified credentials, hackathon qualifications, competitive coding benchmarks, and enterprise simulations.
+            Click any certificate to expand full preview.
+          </p>
         </div>
 
-        <div class="hackathon-info">
-          <div class="hackathon-header">
-            <div class="hackathon-event-tag">24-Hour Hackathon</div>
-            <h3 class="hackathon-title">Recode Hackathon</h3>
-            <p class="hackathon-org">ACM MPSTME · NMIMS Mumbai</p>
+        <!-- Filter Tabs -->
+        <div class="cert-filters" id="certFilters">
+          <button class="cert-filter-btn active" data-filter="all">All <span>(13)</span></button>
+          <button class="cert-filter-btn" data-filter="hackathon">Hackathons <span>(3)</span></button>
+          <button class="cert-filter-btn" data-filter="professional">Industry <span>(3)</span></button>
+          <button class="cert-filter-btn" data-filter="competition">Competitions <span>(3)</span></button>
+          <button class="cert-filter-btn" data-filter="skill">Technical <span>(2)</span></button>
+          <button class="cert-filter-btn" data-filter="community">Community <span>(2)</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Spotlight: Recode Hackathon -->
+    <div class="cert-spotlight reveal" data-category="hackathon">
+      <div class="spotlight-banner">
+        <span class="spotlight-pill"><span class="live-dot"></span> Featured Qualification</span>
+        <span class="spotlight-rank">🏆 Top 15 Teams Shortlisted</span>
+      </div>
+      <div class="spotlight-content">
+        <div class="spotlight-cert-wrap cert-trigger" data-img="assets/certificates/recode-hackathon-certificate.png" data-title="Recode Hackathon — Round 2 Certificate of Accomplishment">
+          <img src="assets/certificates/recode-hackathon-certificate.png" alt="Recode Hackathon Varun Mhatre" class="spotlight-cert-img" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Click to View Full</span></div>
+        </div>
+        <div class="spotlight-details">
+          <div class="spotlight-header">
+            <div class="spotlight-meta-tags">
+              <span class="tag-highlight orange">24-Hour Hackathon</span>
+              <span class="tag-highlight purple">ACM MPSTME · NMIMS Mumbai</span>
+            </div>
+            <h3 class="spotlight-title">Recode Hackathon — Top 15 Finalist</h3>
+            <p class="spotlight-sub">National level engineering hackathon focused on privacy-centric performance &amp; high throughput.</p>
           </div>
 
-          <div class="hackathon-project-block">
-            <div class="hackathon-project-label">Project</div>
-            <h4 class="hackathon-project-name">Insight-OS</h4>
-            <p class="hackathon-project-desc">
-              A lightweight, privacy-first analytics engine designed to capture and visualize user interactions efficiently.
-              Built a minimal JavaScript tracking snippet, real-time analytics dashboard, and funnel-based user journey analysis — along with clickstream heatmapping.
+          <div class="spotlight-project-box">
+            <div class="sp-project-label">Built Project</div>
+            <div class="sp-project-name">Insight-OS</div>
+            <p class="sp-project-desc">
+              Lightweight, privacy-first analytics engine capturing &amp; visualizing user journeys, real-time funnel transitions, and client-side clickstream heatmapping with zero heavy dependencies.
             </p>
           </div>
 
-          <div class="hackathon-highlights">
-            <div class="hackathon-highlight-item">
-              <span class="highlight-marker"></span>
-              <span>Shortlisted among <strong>Top 15 teams</strong>, clearing the initial round</span>
-            </div>
-            <div class="hackathon-highlight-item">
-              <span class="highlight-marker"></span>
-              <span>Built scalable systems with optimized backend throughput</span>
-            </div>
-            <div class="hackathon-highlight-item">
-              <span class="highlight-marker"></span>
-              <span>Designed effective data visualizations under strict constraints</span>
-            </div>
-          </div>
-
-          <div class="hackathon-tags">
-            <span class="tag">Privacy-First Analytics</span>
-            <span class="tag">Real-Time Dashboard</span>
-            <span class="tag">Clickstream Heatmapping</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Scalable Systems</span>
-          </div>
-
-          <div class="hackathon-team">
-            <div class="hackathon-team-label">Team</div>
-            <div class="hackathon-team-members">
-              <span class="team-member">Varun Mhatre</span>
-              <span class="team-divider">·</span>
-              <span class="team-member">Aaryan Patel</span>
-              <span class="team-divider">·</span>
-              <span class="team-member">Vivek Dhadambe</span>
-            </div>
+          <div class="spotlight-bullets">
+            <div class="sp-bullet"><span class="marker-diamond"></span> Shortlisted in <strong>Top 15</strong> out of competitive multi-college applicant pool</div>
+            <div class="sp-bullet"><span class="marker-diamond"></span> High-throughput ingest telemetry with zero third-party cookies</div>
+            <div class="sp-bullet"><span class="marker-diamond"></span> Teammates: <strong>Aaryan Patel</strong> &amp; <strong>Vivek Dhadambe</strong></div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Clean Grid of All Other Certificates -->
+    <div class="cert-modern-grid stagger" id="certGrid">
+
+      <!-- ET AI Hackathon 2.0 -->
+      <div class="cert-modern-card" data-category="hackathon" style="--card-accent: var(--red);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/et-ai-hackathon.png" data-title="ET AI Hackathon 2.0 — The Economic Times">
+          <img src="assets/certificates/previews/et-ai-hackathon.png" alt="ET AI Hackathon 2.0 Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill red">Hackathon</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">The Economic Times</span>
+            <span class="cert-date-badge">Aug 2026</span>
+          </div>
+          <h4 class="cert-item-title">ET AI Hackathon 2.0</h4>
+          <p class="cert-item-summary">National level AI hackathon building solutions with Generative AI and LLM architectures.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">GenAI</span>
+            <span class="cert-footer-tag">AI Builders</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/et-ai-hackathon.png" data-title="ET AI Hackathon 2.0 — The Economic Times">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adobe University Hackathon -->
+      <div class="cert-modern-card" data-category="hackathon" style="--card-accent: var(--orange);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/adobe-hackathon.png" data-title="Adobe University Hackathon — Adobe &amp; Unstop">
+          <img src="assets/certificates/previews/adobe-hackathon.png" alt="Adobe University Hackathon Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill orange">Hackathon</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Adobe · Unstop</span>
+            <span class="cert-date-badge">Aug 2026</span>
+          </div>
+          <h4 class="cert-item-title">Adobe University Hackathon</h4>
+          <p class="cert-item-summary">Competitive hackathon tackling real-world creative and software system challenges.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Adobe</span>
+            <span class="cert-footer-tag">Software Eng</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/adobe-hackathon.png" data-title="Adobe University Hackathon — Adobe &amp; Unstop">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Data Analytics -->
+      <div class="cert-modern-card featured-item" data-category="professional" style="--card-accent: var(--cyan);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/google-data-analytics.png" data-title="Google Data Analytics Professional Certificate — Google">
+          <img src="assets/certificates/previews/google-data-analytics.png" alt="Google Data Analytics Professional Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill cyan">Professional</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Coursera · Google</span>
+            <span class="cert-date-badge">Oct 2025</span>
+          </div>
+          <h4 class="cert-item-title">Google Data Analytics Professional</h4>
+          <p class="cert-item-summary">Rigorous 9-course credential covering data cleaning, analysis, SQL, Tableau, R, and statistical decision frameworks.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">SQL</span>
+            <span class="cert-footer-tag">Tableau</span>
+            <span class="cert-footer-tag">R &amp; Spreadsheets</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/google-data-analytics.png" data-title="Google Data Analytics Professional Certificate — Google">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- British Airways Data Science Simulation -->
+      <div class="cert-modern-card" data-category="professional" style="--card-accent: var(--red);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/forage-ba-data-science.png" data-title="Data Science Job Simulation — British Airways">
+          <img src="assets/certificates/previews/forage-ba-data-science.png" alt="British Airways Data Science Simulation" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill red">Industry Simulation</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">British Airways · Forage</span>
+            <span class="cert-date-badge">Jun 2026</span>
+          </div>
+          <h4 class="cert-item-title">Data Science Job Simulation</h4>
+          <p class="cert-item-summary">Customer booking behaviour predictive modelling, exploratory data analysis, and airline lounge eligibility algorithms.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Predictive ML</span>
+            <span class="cert-footer-tag">Scikit-Learn</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/forage-ba-data-science.png" data-title="Data Science Job Simulation — British Airways">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tata Data Visualisation Simulation -->
+      <div class="cert-modern-card" data-category="professional" style="--card-accent: var(--purple);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/forage-tata-data-viz.png" data-title="Data Visualisation: Empowering Business with Effective Insights — Tata">
+          <img src="assets/certificates/previews/forage-tata-data-viz.png" alt="Tata Data Visualisation" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill purple">Industry Simulation</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Tata Group · Forage</span>
+            <span class="cert-date-badge">Jun 2026</span>
+          </div>
+          <h4 class="cert-item-title">Data Visualisation for Business</h4>
+          <p class="cert-item-summary">Framing executive business scenarios, choosing impactful visual metrics, and translating trends into leadership decisions.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Data Viz</span>
+            <span class="cert-footer-tag">BI Dashboards</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/forage-tata-data-viz.png" data-title="Data Visualisation: Empowering Business with Effective Insights — Tata">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Samsung Galaxy AI Treasure Hunt -->
+      <div class="cert-modern-card" data-category="competition" style="--card-accent: var(--cyan);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/samsung-ai-treasure-hunt.png" data-title="Samsung Galaxy AI Treasure Hunt — Samsung &amp; Unstop">
+          <img src="assets/certificates/previews/samsung-ai-treasure-hunt.png" alt="Samsung Galaxy AI Treasure Hunt" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill cyan">Competition</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Samsung · Unstop</span>
+            <span class="cert-date-badge">Jun 2026</span>
+          </div>
+          <h4 class="cert-item-title">Samsung Galaxy AI Treasure Hunt</h4>
+          <p class="cert-item-summary">Participated in algorithmic problem solving and AI feature exploration challenges organized by Samsung.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Galaxy AI</span>
+            <span class="cert-footer-tag">Problem Solving</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/samsung-ai-treasure-hunt.png" data-title="Samsung Galaxy AI Treasure Hunt — Samsung &amp; Unstop">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power BI Competition (Terna) -->
+      <div class="cert-modern-card" data-category="competition" style="--card-accent: var(--orange);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/powerbi-competition.png" data-title="Power BI Tool Competition — Terna Engineering College">
+          <img src="assets/certificates/previews/powerbi-competition.png" alt="Power BI Competition Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill orange">Competition</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Terna Engineering College</span>
+            <span class="cert-date-badge">Sep 2026</span>
+          </div>
+          <h4 class="cert-item-title">Power BI Tool Competition</h4>
+          <p class="cert-item-summary">Showcased data analysis, DAX modeling, KPI architectures, and interactive dashboard creation in Mechatronics Dept.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Power BI</span>
+            <span class="cert-footer-tag">DAX &amp; ETL</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/powerbi-competition.png" data-title="Power BI Tool Competition — Terna Engineering College">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spot the Bug (CSI Terna) -->
+      <div class="cert-modern-card" data-category="competition" style="--card-accent: var(--green);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/csi-spot-the-bug.jpg" data-title="Spot the Bug Competition — CSI Terna Tech Week 2026">
+          <img src="assets/certificates/previews/csi-spot-the-bug.jpg" alt="Spot the Bug Competition Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill green">Competition</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">CSI Terna · Tech Week</span>
+            <span class="cert-date-badge">Apr 2026</span>
+          </div>
+          <h4 class="cert-item-title">Spot the Bug Competition</h4>
+          <p class="cert-item-summary">Competitive code debugging, static analysis, logical error detection, and runtime bug fixing under strict time limits.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Debugging</span>
+            <span class="cert-footer-tag">Code Analysis</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/csi-spot-the-bug.jpg" data-title="Spot the Bug Competition — CSI Terna Tech Week 2026">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- HackerRank SQL Intermediate -->
+      <div class="cert-modern-card" data-category="skill" style="--card-accent: var(--cyan);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/hackerrank-sql-intermediate.png" data-title="SQL (Intermediate) Skill Certificate — HackerRank">
+          <img src="assets/certificates/previews/hackerrank-sql-intermediate.png" alt="HackerRank SQL Intermediate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill cyan">Technical Skill</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">HackerRank</span>
+            <span class="cert-date-badge">May 2025</span>
+          </div>
+          <h4 class="cert-item-title">SQL (Intermediate)</h4>
+          <p class="cert-item-summary">Complex joins, subqueries, aggregations, window functions, and query optimization patterns.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Advanced SQL</span>
+            <span class="cert-footer-tag">Queries</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/hackerrank-sql-intermediate.png" data-title="SQL (Intermediate) Skill Certificate — HackerRank">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- HackerRank Python Basic -->
+      <div class="cert-modern-card" data-category="skill" style="--card-accent: var(--green);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/hackerrank-python-basic.png" data-title="Python (Basic) Skill Certificate — HackerRank">
+          <img src="assets/certificates/previews/hackerrank-python-basic.png" alt="HackerRank Python Basic" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill green">Technical Skill</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">HackerRank</span>
+            <span class="cert-date-badge">Dec 2025</span>
+          </div>
+          <h4 class="cert-item-title">Python (Basic)</h4>
+          <p class="cert-item-summary">Algorithmic structures, OOP fundamentals, functions, control flow, and error handling in Python.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Python</span>
+            <span class="cert-footer-tag">Algorithms</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/hackerrank-python-basic.png" data-title="Python (Basic) Skill Certificate — HackerRank">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CampusCrew 100K Milestone Honor -->
+      <div class="cert-modern-card" data-category="community" style="--card-accent: var(--purple);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/campuscrew-100k.png" data-title="CampusCrew 100K Milestone Honor">
+          <img src="assets/certificates/previews/campuscrew-100k.png" alt="CampusCrew 100K Milestone Honor" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill purple">Community Honor</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">CampusCrew</span>
+            <span class="cert-date-badge">Jun 2026</span>
+          </div>
+          <h4 class="cert-item-title">100K Milestone Honor</h4>
+          <p class="cert-item-summary">Recognized as an active, valued member contributing to a tech student community of 100,000+ members across 15+ countries.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Community</span>
+            <span class="cert-footer-tag">100K Members</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/campuscrew-100k.png" data-title="CampusCrew 100K Milestone Honor">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unstop Week of Wins -->
+      <div class="cert-modern-card" data-category="community" style="--card-accent: var(--orange);">
+        <div class="cert-thumb-box cert-trigger" data-img="assets/certificates/previews/unstop-week-of-wins.png" data-title="Unstop Week-of-Wins Certificate">
+          <img src="assets/certificates/previews/unstop-week-of-wins.png" alt="Unstop Week-of-Wins Certificate" loading="lazy">
+          <div class="cert-overlay-hint"><span>🔍 Preview</span></div>
+          <span class="cert-type-pill orange">Engagement</span>
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-date-row">
+            <span class="cert-issuer-name">Unstop</span>
+            <span class="cert-date-badge">2026</span>
+          </div>
+          <h4 class="cert-item-title">Unstop Week-of-Wins</h4>
+          <p class="cert-item-summary">Participated across skill evaluation modules, technical quizzes, and competitive sprints on the Unstop portal.</p>
+          <div class="cert-card-footer">
+            <span class="cert-footer-tag">Competitive</span>
+            <span class="cert-footer-tag">Learning</span>
+            <button class="cert-view-btn cert-trigger" data-img="assets/certificates/previews/unstop-week-of-wins.png" data-title="Unstop Week-of-Wins Certificate">View Certificate ↗</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="cert-modal" id="certModal" aria-hidden="true" role="dialog">
+    <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+    <div class="cert-modal-dialog">
+      <div class="cert-modal-header">
+        <span class="cert-modal-title" id="certModalTitle">Certificate Preview</span>
+        <button class="cert-modal-close" id="certModalClose" aria-label="Close preview">&times;</button>
+      </div>
+      <div class="cert-modal-body">
+        <img id="certModalImg" src="" alt="Certificate preview high resolution">
+      </div>
+      <div class="cert-modal-footer">
+        <span class="cert-modal-hint">ESC or click backdrop to close</span>
+        <a id="certModalOpenTab" href="#" target="_blank" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.7rem;">Open Full Image ↗</a>
+      </div>
+    </div>
+  </div>
 
 </div><!-- /page -->
 
